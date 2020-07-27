@@ -93,13 +93,29 @@ important features by assigning a threshold value above which we would select th
 us 7 most important features which we used in the next steps. They are as follows:
 
 ```
-1) Hour_of_day
-2) Duration
-3) US_popularity_estimateliveness
-4) Hist_user_behavior_reason_start_fwdbtn
-5) Hist_user_behavior_reason_start_trackdone
-6) Hist_user_behavior_reason_end_fwdbtn
-7) Hist_user_behavior_reason_end_trackdone
+1) liveness
+
+2) mechanism
+
+3) speechiness
+
+4) tempo
+
+5) valence
+
+6) acoustic_vector_2
+
+7) session_position
+
+8) hour_of_day
+
+9) hist_user_behavior_reason_start_fwdbtn
+
+10) hist_user_behavior_reason_start_trackdone
+
+11) hist_user_behavior_reason_end_fwdbtn
+
+12) hist_user_behavior_reason_end_trackdone
 ```
 Logistic Regression: Once we had the most important features, we used the Logit Model to perform
 logistic regression using covariates, to find the outcome of the song being skipped or not. We were able
@@ -108,16 +124,17 @@ to predict the probability of the song being skipped with an accuracy of 90%.
 **Inferences based on the coefficients of regression:**
 
 ```
-● We infer that features like hour of the day, popularity are statistically insignificant features due
-to their p-values in the regression.
-● We can also infer that provided the other features remain constant, a song that started by
-pressing the forward button has a higher probability of getting skipped. This might be due to the
-recommendation system of the application that puts songs of similar features together.
-● Provided the other factors remain the same, a song which has started by the track getting over
-would have a lower probability of getting skipped. This might be due to the recommendation system
-of the application that puts songs of similar features together.
-● The model also rightly predicts the fact that a song ended by pressing the forward button has a high
-positive coefficient provided other factors remain the same.
+1. We infer from the above model that out of the selected features, features such as liveness, speechiness, valence, acoustic_vector_2, session_position, hour_of_day are not statistically significant.
+
+2. We can also infer that provided the other factors remain the same, a song which has started by pressing the forward button would have a higher probability of getting skipped. This might be due to the recommendation system of the application that puts songs of similar features together. 
+
+3. Provided the other factors remain the same, a song which has started by the track getting over would have a lower probability of getting skipped. This might be due to the recommendation system of the application that puts songs of similar features together.
+
+4. The model also rightly predicts the fact that a song ended by pressing the forward button has a high positive coefficient provided other factors remain the same. 
+
+5. Provided the other factors remain the same, a song that ends with the track ending has the lowest probability of getting skipped due to it's negative coefficient. 
+
+6. Provided the other factors remain the same, higher the mechanism lower would be the probability of the song getting skipped and higher the tempo, higher would be the probabiltiy of the song getting skipped. 
 ```
 
 **Outcomes:**
