@@ -146,13 +146,13 @@ performing context types (fig b)
 ```
 ```
 Figure a
-![alt text] https://github.com/adityabaser/Spotify-Business-of-Rhythm/blob/master/Results/Figure%20a%20-%20Number%20of%20times%20each%20category%20was%20played.PNG
+![alt text](https://github.com/adityabaser/Spotify-Business-of-Rhythm/blob/master/Results/Figure%20a%20-%20Number%20of%20times%20each%20category%20was%20played.PNG)
 
 Figure b
-![alt text] https://github.com/adityabaser/Spotify-Business-of-Rhythm/blob/master/Results/Figure%20b%20-%20Number%20of%20Active%20users%20versus%20the%20hour%20of%20the%20day.PNG
+![alt text](https://github.com/adityabaser/Spotify-Business-of-Rhythm/blob/master/Results/Figure%20b%20-%20Number%20of%20Active%20users%20versus%20the%20hour%20of%20the%20day.PNG)
 
 Figure c
-![alt text] https://github.com/adityabaser/Spotify-Business-of-Rhythm/blob/master/Results/Figure%20c%20-%20Stacked%20Bar%20Graph%20of%20Categories%20played%20per%20hour.PNG
+![alt text](https://github.com/adityabaser/Spotify-Business-of-Rhythm/blob/master/Results/Figure%20c%20-%20Stacked%20Bar%20Graph%20of%20Categories%20played%20per%20hour.PNG)
 c. Learning how various context types are performing during each hour of the day and drawing
 conclusions.
 ```
