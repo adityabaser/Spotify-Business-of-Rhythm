@@ -146,7 +146,7 @@ performing context types (fig b)
 ```
 ```
 Figure a
-![alt text](https://github.com/adityabaser/Spotify-Business-of-Rhythm/blob/master/Results/Figure%20a%20-%20Number%20of%20times%20each%20category%20was%20played.PNG)
+![picture](https://github.com/adityabaser/Spotify-Business-of-Rhythm/blob/master/Results/Figure%20a%20-%20Number%20of%20times%20each%20category%20was%20played.PNG)
 
 Figure b
 ![alt text](https://github.com/adityabaser/Spotify-Business-of-Rhythm/blob/master/Results/Figure%20b%20-%20Number%20of%20Active%20users%20versus%20the%20hour%20of%20the%20day.PNG)
