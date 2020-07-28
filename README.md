@@ -144,7 +144,7 @@ a. Computing the number of times each context type is played during the time of 
 b. Finding the optimum hour of the day by analyzing the number of active users to promote under-
 performing context types (fig b)
 ```
-```
+
 Figure a
 ![picture](https://github.com/adityabaser/Spotify-Business-of-Rhythm/blob/master/Results/Figure%20a%20-%20Number%20of%20times%20each%20category%20was%20played.PNG)
 
@@ -153,9 +153,10 @@ Figure b
 
 Figure c
 ![alt text](https://github.com/adityabaser/Spotify-Business-of-Rhythm/blob/master/Results/Figure%20c%20-%20Stacked%20Bar%20Graph%20of%20Categories%20played%20per%20hour.PNG)
+
+
 c. Learning how various context types are performing during each hour of the day and drawing
 conclusions.
-```
 
 ## 4 - Analyzing the features of current song being played to predict the next song to be played:
 
