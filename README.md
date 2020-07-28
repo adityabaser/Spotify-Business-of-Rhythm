@@ -93,29 +93,13 @@ important features by assigning a threshold value above which we would select th
 us 7 most important features which we used in the next steps. They are as follows:
 
 ```
-1) liveness
+hour_of_day
+duration
+hist_user_behavior_reason_start_fwdbtn
+hist_user_behavior_reason_start_trackdone
+hist_user_behavior_reason_end_fwdbtn
+hist_user_behavior_reason_end_trackdone
 
-2) mechanism
-
-3) speechiness
-
-4) tempo
-
-5) valence
-
-6) acoustic_vector_2
-
-7) session_position
-
-8) hour_of_day
-
-9) hist_user_behavior_reason_start_fwdbtn
-
-10) hist_user_behavior_reason_start_trackdone
-
-11) hist_user_behavior_reason_end_fwdbtn
-
-12) hist_user_behavior_reason_end_trackdone
 ```
 Logistic Regression: Once we had the most important features, we used the Logit Model to perform
 logistic regression using covariates, to find the outcome of the song being skipped or not. We were able
@@ -124,7 +108,7 @@ to predict the probability of the song being skipped with an accuracy of 90%.
 **Inferences based on the coefficients of regression:**
 
 ```
-1. We infer from the above model that out of the selected features, features such as liveness, speechiness, valence, acoustic_vector_2, session_position, hour_of_day are not statistically significant.
+1. We infer from the above model that out of the selected features, features such as hour of day, popularity and liveness are statistically insignificant features.
 
 2. We can also infer that provided the other factors remain the same, a song which has started by pressing the forward button would have a higher probability of getting skipped. This might be due to the recommendation system of the application that puts songs of similar features together. 
 
@@ -132,9 +116,7 @@ to predict the probability of the song being skipped with an accuracy of 90%.
 
 4. The model also rightly predicts the fact that a song ended by pressing the forward button has a high positive coefficient provided other factors remain the same. 
 
-5. Provided the other factors remain the same, a song that ends with the track ending has the lowest probability of getting skipped due to it's negative coefficient. 
-
-6. Provided the other factors remain the same, higher the mechanism lower would be the probability of the song getting skipped and higher the tempo, higher would be the probabiltiy of the song getting skipped. 
+5. Provided the other factors remain the same, more the duration of the song lesser is the probability of the song getting skipped.  
 ```
 
 **Outcomes:**
